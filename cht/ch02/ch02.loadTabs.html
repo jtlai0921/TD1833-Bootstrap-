@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8"UTF-8">
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <title>Bootstrap - Load Tabs CSS</title>
+</head>
+<body>
+<ul class="nav nav-tabs" id="myTab">
+    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+    <li><a href="#news" data-toggle="tab">News</a></li>
+    <li><a href="#blog" data-toggle="tab">Blog</a></li>
+    <li><a href="#about" data-toggle="tab">About</a></li>
+</ul>
+<!-- href屬性的值要和後面tab-pane中的id值對應 -->
+<div class="tab-content">
+    <div class="tab-pane active" id="home">Home Page</div><!--tab標簽對應的內容-->
+    <div class="tab-pane" id="news">News Page</div>
+    <div class="tab-pane" id="blog">Blog Page</div>
+    <div class="tab-pane" id="about">About Page</div>
+</div>
+<script src="../js/jquery.js"></script>		<!--jQuery應該放在前面優先載入-->
+<script src="../bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
